@@ -58,6 +58,7 @@ PRIMARY STRUCTURES:
 - Mother
 - Ryu
 - KJ
+- Etc
 
 ### INCIDENTS
 
@@ -66,6 +67,26 @@ PRIMARY STRUCTURES:
 - Spine Resonance
 
 ---
+
+## STORY DEVELOPERS
+
+### EMBOLOGY
+- Cay
+- Kiwi
+- Rei
+- Etc.
+
+### 중앙정보부 (CENTRAL INTELLIGENCE DEPARTMENT)
+- KJ
+- Sakurai Ryu
+- Fzimi
+- Etc.
+
+### KRASIS
+- TBA
+
+### FANTASIA
+- TBA
 
 ## NOTICE
 
