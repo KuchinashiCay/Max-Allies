@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CENTRAL DIRECTORATE ACCESS NODE</title>
+
+<style>
+body {
+  background: black;
+  color: #ff1a1a;
+  font-family: monospace;
+  text-align: center;
+  padding-top: 120px;
+}
+
+.box {
+  border: 1px solid #ff1a1a;
+  width: 600px;
+  margin: auto;
+  padding: 30px;
+}
+
+input {
+  background: black;
+  border: 1px solid #ff1a1a;
+  color: #ff1a1a;
+  padding: 10px;
+  width: 80%;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #ff1a1a;
+  border: none;
+  cursor: pointer;
+}
+
+.warning {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #888;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+  <h2>CENTRAL DIRECTORATE NODE</h2>
+  <p>AUTHORIZATION REQUIRED</p>
+
+  <input type="password" id="code" placeholder="ACCESS CODE">
+
+  <br>
+
+  <button onclick="login()">ENTER</button>
+
+  <p id="msg"></p>
+
+  <div class="warning">
+    UNAUTHORIZED ACCESS WILL BE TERMINATED
+  </div>
+</div>
+
+<script>
+function login(){
+  const code = document.getElementById("code").value;
+
+  if(code === "NULL-KAI-01"){
+    document.getElementById("msg").innerText = "ACCESS GRANTED";
+    setTimeout(()=> {
+      window.location.href = "main.html";
+    }, 1000);
+  } else {
+    document.getElementById("msg").innerText = "ACCESS DENIED";
+  }
+}
+</script>
+
+</body>
+</html>
