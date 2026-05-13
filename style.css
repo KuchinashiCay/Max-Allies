@@ -1,0 +1,56 @@
+/* MAX ALLIES GLOBAL TERMINAL STYLE */
+:root {
+    --terminal-green: #00ff99;
+    --terminal-red: #ff3333;
+    --bg-black: #0a0a0a;
+    --panel-bg: rgba(0, 255, 153, 0.05);
+}
+
+body {
+    background-color: var(--bg-black);
+    color: var(--terminal-green);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* 스캔라인 효과 */
+body::before {
+    content: " ";
+    display: block;
+    position: fixed;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), 
+                linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    z-index: 9999;
+    pointer-events: none;
+    background-size: 100% 2px, 3px 100%;
+}
+
+h1, h2, h3 { text-transform: uppercase; letter-spacing: 2px; }
+.warning { color: var(--terminal-red); font-weight: bold; animation: blink 1s infinite; }
+
+@keyframes blink { 
+    0% { opacity: 1; } 50% { opacity: 0.1; } 100% { opacity: 1; } 
+}
+
+.panel {
+    border: 1px solid var(--terminal-green);
+    padding: 20px;
+    background: var(--panel-bg);
+    margin: 10px 0;
+}
+
+.btn-access {
+    background: transparent;
+    border: 1px solid var(--terminal-green);
+    color: var(--terminal-green);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-access:hover {
+    background: var(--terminal-green);
+    color: black;
+}
